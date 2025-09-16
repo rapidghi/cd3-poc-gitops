@@ -1,0 +1,11 @@
+replicaCount: 1
+
+image:
+  repository: ghcr.io/rapidghi/cd3-poc-app # <-- IMPORTANT: Change 'rapidghi' to your GitHub username
+  pullPolicy: IfNotPresent
+  tag: ""
+
+service:
+  type: ClusterIP
+  port: 80
+  targetPort: 3000
